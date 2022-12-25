@@ -6,6 +6,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.caroAlexander.autStartSharpDemoSerenity.tasks.LogIn;
 import org.caroAlexander.autStartSharpDemoSerenity.tasks.OpenUp;
 
 public class LoginStartSharpStepDefinitions {
@@ -24,6 +25,7 @@ public class LoginStartSharpStepDefinitions {
     @When("^he navigates to the login page and provides this correct login credentials in the login form and clicks the Sign button$")
     public void heNavigatesToTheLoginPageAndProvidesThisCorrectLoginCredentialsInTheLoginFormAndClicksTheSignButton() {
         // Write code here that turns the phrase above into concrete actions
+        OnStage.theActorInTheSpotlight().attemptsTo(LogIn.theSingInPage());
         //throw new PendingException();
     }
 
