@@ -13,4 +13,7 @@ public class StartSharpLogin extends PageObject {
 
     public static final Target SIGIN_BUTTON = Target.the("button that shows us the form to login")
             .located(By.id("LoginPanel0_LoginButton"));
+
+    public static final Target NAME_TITLE = Target.the("Extraer el titulo de la pagina")
+            .located(By.xpath("//h1[contains(text(),'Dashboard')]"));
 }

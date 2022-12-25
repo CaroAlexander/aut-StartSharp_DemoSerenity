@@ -11,6 +11,6 @@ import org.junit.runner.RunWith;
         glue = "org.caroAlexander.autStartSharpDemoSerenity.stepdefinitions",
         snippets = SnippetType.CAMELCASE )
 
-public class RunnerTags {
+public class LoginRunner {
 
 }
