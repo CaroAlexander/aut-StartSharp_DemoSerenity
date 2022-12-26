@@ -19,7 +19,6 @@ public class LogIn implements Task {
                 Enter.theValue("admin").into(StartSharpLogin.INPUT_USER),
                 Enter.theValue("serenity").into(StartSharpLogin.INPUT_PASSWORD),
                 Click.on(StartSharpLogin.SIGIN_BUTTON)
-
         );
     }
 }

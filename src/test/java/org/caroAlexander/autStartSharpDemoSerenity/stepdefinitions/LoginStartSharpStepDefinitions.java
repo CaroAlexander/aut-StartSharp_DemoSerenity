@@ -19,7 +19,6 @@ public class LoginStartSharpStepDefinitions {
 
     @Given("^than Alex, a registered user of the StartSharp application, wants to log in to the StartSharp main page to view the Dashboard$")
     public void thanAlexARegisteredUserOfTheStartSharpApplicationWantsToLogInToTheStartSharpMainPageToViewTheDashboard() {
-        // Write code here that turns the phrase above into concrete actions
         OnStage.theActorCalled("Alex").wasAbleTo(OpenUp.StartSharpHomePage ());
         //throw new PendingException();
     }
@@ -27,14 +26,12 @@ public class LoginStartSharpStepDefinitions {
 
     @When("^he navigates to the login page and provides this correct login credentials in the login form and clicks the Sign button$")
     public void heNavigatesToTheLoginPageAndProvidesThisCorrectLoginCredentialsInTheLoginFormAndClicksTheSignButton() {
-        // Write code here that turns the phrase above into concrete actions
         OnStage.theActorInTheSpotlight().attemptsTo(LogIn.theSingInPage());
         //throw new PendingException();
     }
 
     @Then("^he should be redirected to the dashboard main page$")
     public void heShouldBeRedirectedToTheDashboardMainPage() {
-        // Write code here that turns the phrase above into concrete actions
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(AnswerLogin.toTheQuestionLogin()));
         //throw new PendingException();
     }
