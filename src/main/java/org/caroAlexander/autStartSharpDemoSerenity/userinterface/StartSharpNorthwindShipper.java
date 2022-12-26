@@ -15,10 +15,10 @@ public class StartSharpNorthwindShipper extends PageObject {
     public static final Target NEW_SHIPPER_BUTTON = Target.the("button that shows us the New Shipper form")
             .located(By.xpath("//i[contains(@class,'fa fa-plus-circle text-green')]"));
     public static final Target INPUT_COMPANYNAME = Target.the( "where do we write the Company's Name")
-            .located(By.id("Serenity_Demo_Northwind_ShipperDialog9_CompanyName"));
-
+            .located(By.name("CompanyName"));
+//Serenity_Demo_Northwind_ShipperDialog9_CompanyName
     public static final Target INPUT_COMPANYPHONE = Target.the("where do we write the Company's Phone")
-            .located(By.id("Serenity_Demo_Northwind_ShipperDialog9_Phone"));
+            .located(By.name("Phone"));
 
     public static final Target SAVE_SHIPPER_BUTTON = Target.the("button that shows us the New Shipper form")
             .located(By.xpath("//span[contains(text(),'Guardar')]"));
