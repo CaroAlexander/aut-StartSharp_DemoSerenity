@@ -21,6 +21,5 @@ public class StartSharpNorthwindShipper extends PageObject {
             .located(By.name("Phone"));
 
     public static final Target SAVE_SHIPPER_BUTTON = Target.the("button that shows us the New Shipper form")
-            .located(By.xpath("//span[contains(text(),'Guardar')]"));
-
+            .located(By.xpath("//i[contains(@class,'fa fa-check-circle text-purple')]"));
 }
