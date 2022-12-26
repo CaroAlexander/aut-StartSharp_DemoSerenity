@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.waits.Wait;
 import org.caroAlexander.autStartSharpDemoSerenity.userinterface.StartSharpLogin;
 import org.caroAlexander.autStartSharpDemoSerenity.userinterface.StartSharpNorthwindShipper;
 
@@ -20,7 +21,9 @@ public class AddNewShipper implements Task {
                 Click.on(StartSharpNorthwindShipper.NEW_SHIPPER_BUTTON),
                 Enter.theValue("IAS Clean").into(StartSharpNorthwindShipper.INPUT_COMPANYNAME),
                 Enter.theValue("3054461269").into(StartSharpNorthwindShipper.INPUT_COMPANYPHONE),
-                Click.on(StartSharpNorthwindShipper.SAVE_SHIPPER_BUTTON)
+                Click.on(StartSharpNorthwindShipper.SAVE_SHIPPER_BUTTON),
+                Click.on(StartSharpNorthwindShipper.NORTHWIND_SECTION_BUTTON)
+                //Wait.for(5000)// espera de 5 segundos
         );
 
     }
